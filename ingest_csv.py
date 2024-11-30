@@ -13,7 +13,7 @@ columns = firstLine.split(",")
 
 # Build SQL code to drop table if exists and create table
 sqlQueryCreate = """ DROP TABLE IF EXISTS """+ tablename + """;\n"""
-sqlQueryCreate += """ CREATE TABLE """+ tablename + " ( \" """
+sqlQueryCreate += """ CREATE TABLE """+ tablename + " ( \""""
 
 # Define columns for table
 for column in columns:
